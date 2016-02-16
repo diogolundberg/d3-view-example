@@ -38,3 +38,14 @@ path.arc {
 .link.target {
   stroke: #2ca02c;
 }
+
+.tension {
+    position:absolute;
+    bottom:0;
+    font-size:18px;
+}
+
+.range-input {
+    position:relative;
+    top:3px;
+}
