@@ -58,7 +58,7 @@ var bundle = (function() {
             .attr("d", d3.svg.arc().outerRadius(ry - 120).innerRadius(0).startAngle(0).endAngle(2 * Math.PI))
             .on("mousedown", mousedown);
 
-        d3.json("static/flare-imports.json", function(classes) {
+        d3.json("static/json/flare-imports.json", function(classes) {
           var nodes = cluster.nodes(packages.root(classes)),
               links = packages.imports(nodes),
               splines = bundle(links);
